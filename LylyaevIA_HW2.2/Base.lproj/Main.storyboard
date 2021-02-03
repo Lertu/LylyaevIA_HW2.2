@@ -44,7 +44,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4n0-VT-Y8r">
                                         <rect key="frame" x="78" y="0.0" width="308" height="31"/>
                                         <connections>
-                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="vvt-PZ-6MU"/>
+                                            <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="JPO-VX-v1R"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -70,7 +70,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v7M-BB-Xot">
                                         <rect key="frame" x="78" y="0.0" width="308" height="31"/>
                                         <connections>
-                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="KXS-bX-ZTt"/>
+                                            <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="JQQ-rb-oW5"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -96,7 +96,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhQ-Mq-Zzb">
                                         <rect key="frame" x="78" y="0.0" width="308" height="31"/>
                                         <connections>
-                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kwu-v4-zDk"/>
+                                            <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="T0H-HK-6bA"/>
                                         </connections>
                                     </slider>
                                 </subviews>

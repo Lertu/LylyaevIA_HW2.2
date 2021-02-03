@@ -26,38 +26,24 @@ class ViewController: UIViewController {
         greenSlider.minimumTrackTintColor = .green
         blueSlider.minimumTrackTintColor = .blue
         colorView.backgroundColor = UIColor(
-            red: 0.5,
-            green: 0.5,
-            blue: 0.5,
-            alpha: 1)
-    }
-    
-    func mixColors() {
-        let red = CGFloat(redSlider.value)
-        let green = CGFloat(greenSlider.value)
-        let blue = CGFloat(blueSlider.value)
-        let color = UIColor (red: red, green: green, blue: blue, alpha: 1)
-        colorView.backgroundColor = color
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
     }
 
-    @IBAction func redSliderAction() {
-        let value = String(format: "%0.2f",redSlider.value)
-        redSliderValue.text = value
-        mixColors()
+    @IBAction func rgbSlider(_ sender: UISlider) {
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+        redSliderValue.text = String(format: "%0.2f",redSlider.value)
+        greenSliderValue.text = String(format: "%0.2f",greenSlider.value)
+        blueSliderValue.text = String(format: "%0.2f",blueSlider.value)
     }
-    @IBAction func greenSliderAction() {
-        let value = String(format: "%0.2f",greenSlider.value)
-        greenSliderValue.text = value
-        mixColors()
-    }
-    @IBAction func blueSliderAction() {
-        let value = String(format: "%0.2f",blueSlider.value)
-        blueSliderValue.text = value
-        mixColors()
-    }
-    
-    
-    
 
 }
 
