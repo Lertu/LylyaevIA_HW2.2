@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    @IBOutlet var redSliderTF: UITextField!
+    @IBOutlet var greenSliderTF: UITextField!
+    @IBOutlet var blueSliderTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
